@@ -1,0 +1,50 @@
+2006 Canadian Computing Competition, Stage 1
+
+Problem S5: Origin of Life
+  Conway’s Game of Life is not really a game, but a cellular automaton - a set of rules describing interactions among adjacent cells on a grid. In our game, we have an n by m rectangular grid of cells identified by integer coordinates (x, y).
+The game progresses through a series of steps; at each step a new generation is computed from the current generation. The game begins with the first generation. In any given generation, which we shall call the current generation, each cell is either live or dead. In the next generation, each cell’s status may change, depending on the status of its immediate neighbours in the current generation. Two distinct cells (x1, y1) and (x2, y2) are immediate neighbours if they are horizontally, vertically,
+  or diagonally adjacent; that is, if |x1 - x2| ≤ 1 and |y1 - y2| ≤ 1. Each cell that is not on the border of the grid has eight immediate neighbours.
+There are three integer parameters (a, b, c) which affect the game. The rules of the game are:
+
+ If a live cell has fewer than a live neighbours in the current generation it dies of loneliness.
+  That is, it is dead in the next generation.
+ If a live cell has more than b live neighbours in the current generation it dies of overcrowding.
+  That is, it is dead in the next generation.
+ If a dead cell has more than c live neighbours in the current generation it is born.
+  That is, it is live in the next generation.
+ Otherwise, a cell’s status is unchanged from the current generation to the next.
+
+This process continues indefinitely. Eventually, a generation may be repeated in which case life goes on forever. Or all the cells may die. Similarly, if we explore previous generations that may have led to the current one, we may find one that is necessarily a first generation; that is, it could not have been created from a previous generation by following the rules. Such a generation is known as a Garden of Eden.
+Given the game parameters and the current generation, you are to determine whether or not the game might have started with a Garden of Eden. If so, output the number of steps necessary to reach the current generation from the Garden of Eden. If there are several possible answers, find the smallest. If there is none, output -1.
+
+Input
+There are m + 1 lines of input in total.
+	The first line of input contains the game parameters, which are five integers m, n, a, b, c each separated by one space. The constraints are 1 ≤ m ≤ 4, 1 ≤ n ≤ 5, 1 ≤ a < b ≤ 8, 1 ≤ c ≤ 8.
+The next m lines each contain a string of n characters representing a row of the current generation. In the string, an asterisk (“*”) indicates live while a period (“.”) indicates dead.
+
+Sample Input
+
+4 5 2 3 2
+.****
+.****
+.****
+.****
+
+Sample Output
+2
+Explanation
+Assume the sample input is the “current” generation. A possible previous generation is
+
+**.**
+..*.*
+....*
+*****
+
+The above generation can be derived from the following previous generation
+
+.****
+**.*.
+*****
+*..*.
+
+This generation cannot be derived from any other generation. Furthermore, there is no shorter series of generations that has these properties.

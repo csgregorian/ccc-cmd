@@ -1,0 +1,22 @@
+2001 Canadian Computing Competition, Stage 1
+
+Problem J3/S1: Keeping Score
+In a card game, each player's hand is made up of 13 cards. Each hand has a total point value determined by the number of cards that have a point value. The cards which are worth points are the Ace (4 points), King (3 points), Queen (2 points) and Jack (1 point). The other cards (2, 3, 4, 5, 6, 7, 8, 9, 10) have no point value.
+There are four of each type of card, one in each of the four suits. The suits are called clubs (C), diamonds (D), hearts (H), and spades (S). As well, points are assigned for each suit which has a void (3 points), a singleton (2 points), or a doubleton (1 point). A void in a suit means that there are no cards of that suit (e.g. a hand with no spades). A singleton in a suit means that there is only one card in that suit (e.g. a hand with only one diamond). A doubleton in a suit means that there are only two cards in that suit.
+Write a program to read a set of thirteen cards in the form of a string, then evaluate the number of points in the hand. The suits will appear in increasing alphabetical order. Within each suit there will be no duplicate cards.
+The output is to be the hand and the point value shown in a table form as below. Your output should list the cards in the same order as the input. Note that 10 is represented by the character T in both the input and the output.
+
+Sample Input 1
+C258TJKD69QAHSTJA
+
+Sample Output 1
+
+Cards Dealt              PointsClubs 2 5 8 T J K             4Diamonds 6 9 Q A              6Hearts                        3Spades T J A                  5                       Total 18
+
+Sample Input 2
+CAD578KAHAS47TQKA
+
+Sample Output 2
+
+Cards Dealt              PointsClubs A                       6Diamonds 5 7 8 K A            7Hearts A                      6Spades 4 7 T Q K A            9                       Total 28
+Note: your output does not need to match exactly. The spacing is up to you.

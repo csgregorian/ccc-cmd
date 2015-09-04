@@ -1,0 +1,32 @@
+2002 Canadian Computing Competition, Stage 1
+
+Problem S4: Bridge Crossing
+ A rope bridge traverses a deep gorge. People may cross the bridge in groups, but there is a limit (M) to the size of the group. The time taken for a group to cross is determined by the slowest member. You are responsible for safety on the bridge and part of your job is to control the groups crossing.
+People are waiting in a queue (line); when the previous group has crossed, you tell the next few people they can now cross. Groups can be of different sizes; no group can contain more than M people, and the goal is to get everyone over in the shortest time, all the time maintaining the order of the people in the queue. 
+
+Input
+The first line of the input contains an integer M (1 ≤ M ≤ 20). The second line contains Q (1 ≤ Q ≤ 100), the length of the queue waiting to cross.
+For each person in the queue, a pair of input lines follows. The first of these is the name of the person, and the second is that person's individual time to cross the bridge. Recall that a group's crossing time will be the maximum crossing time for any individual in the group.
+
+Output
+ The first line of the output is to give the total crossing time for the entire queue of people. Then, output the names of the people in each group, one group per line, which will obtain the minimum overall crossing time. If several groupings yield the same overall crossing time, any such grouping may be listed. 
+
+Sample Input
+2
+5
+alice
+1
+bob
+5
+charlie
+5
+dobson
+3
+eric
+3
+
+Sample Output
+Total Time: 9
+alice
+bob charlie
+dobson eric

@@ -1,0 +1,35 @@
+2002 Canadian Computing Competition, Stage 1
+
+Problem J4/S2: Fraction Action
+Many advanced calculators have a fraction feature that will simplify fractions for you.
+You are to write a program that will accept for input a non-negative integer as a numerator and a positive integer as a denominator, and output the fraction in simplest form. That is, the fraction cannot be reduced any further, and the numerator will be less than the denominator. You can assume that all input numerators and denominators will produce valid fractions.
+Examples
+
+
+Input
+28
+7
+
+  Output
+4
+
+Input
+13
+5
+
+  Output
+2 3/5
+
+Input
+0
+7
+
+  Output
+0
+
+Input
+55
+10
+
+  Output
+5 1/2

@@ -1,0 +1,31 @@
+2011 Canadian Computing Competition, Stage 1
+
+Problem S5: Switch
+You are walking by a row of K lights, some of which are on and some of which are
+off. In this initial configuration, there is no consecutive sequence of four lights that are on.
+Whenever four or more consecutive lights are on, the lights in that consecutive block will turn off.
+You can only turn on lights that are off.
+What is the minimum number of lights you need to turn on in order to end up with all K lights off?
+
+Input Format
+The first line of input will consist of the integer K (4 ≤ K ≤ 25), indicating the number of lights. Each of the next
+K lines will have either the integer 0 (to represent a light that is off) or the integer 1 (to represent
+a light that is on).
+
+Output Format
+Your program should output the minimum number of lights that must be turned on in order to have all K lights be off.
+
+Sample Input
+5
+1
+1
+0
+1
+1
+
+Sample Output
+1
+Explanation
+Notice that turning on the third light will create five consecutive lights that are on, which will in
+turn cause all of these five lights to be off.
+Note: At least 30% of the test cases will have K ≤ 10.

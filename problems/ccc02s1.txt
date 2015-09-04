@@ -1,0 +1,27 @@
+2002 Canadian Computing Competition, Stage 1
+
+Problem J3/S1: The Students' Council Breakfast
+The students council in your school wants to organize a charity breakfast, and since older students are both wiser and richer, the members of the council decide that the price of each ticket will be based on how many years you have been in the school. A first year student will buy a PINK ticket, a second year student will buy a GREEN ticket, a third year student will buy a RED ticket, and a fourth year student will buy an ORANGE ticket.
+Assume that all tickets are sold. Each colour of ticket is uniquely priced.
+
+Input
+
+Input the cost of a PINK, GREEN, RED, and ORANGE ticket (in that exact order). Input the exact amount of money to be raised by selling tickets. 
+
+Output
+
+Output all combinations of tickets that produce exactly the desired amount to be raised. The combinations may appear in any order. Output the total number of combinations found. Output the smallest number of tickets to print to raise the desired amount so that printing cost is minimized.
+
+Sample Input
+1
+2
+3
+4
+3
+
+Sample Output
+# of PINK is 0 # of GREEN is 0 # of RED is 1 # of ORANGE is 0
+# of PINK is 1 # of GREEN is 1 # of RED is 0 # of ORANGE is 0
+# of PINK is 3 # of GREEN is 0 # of RED is 0 # of ORANGE is 0
+Total combinations is 3.
+Minimum number of tickets to print is 1.

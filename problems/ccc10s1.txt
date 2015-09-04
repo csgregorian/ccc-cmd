@@ -1,0 +1,56 @@
+2010 Canadian Computing Competition, Stage 1
+
+Problem S1: Computer Purchase
+In order to increase your performance on the ABC (Another Buying Contest),
+you decide that you need a new computer. When determining which computer to buy,
+you narrow your search categories to:
+
+RAM (in gigabytes), denoted as R;
+CPU speed (in megahertz), denoted as S;
+disk drive space (in gigabytes), denoted as D.
+
+You perform some analysis and determine that the most preferred machine is the
+machine that has the largest value of the expression
+2R+3S+D. Your task is to read a given list of
+computers and output the top two computers in order of preference, from highest
+preference to lowest preference.
+
+Input
+The first line of input will be an integer n (0 ≤ n
+≤ 10000). Each of the remaining n lines of input will contain a
+computer specification. A computer specification is of the form:
+
+computer name (a string of less than 20 characters)
+the RAM available (an integer R with 1 ≤ R ≤
+128)
+the CPU speed (an integer S with 1 ≤ S ≤ 4000)
+
+the disk drive space (an integer D with 1 ≤ D
+≤ 3000)
+
+There is one space between the name, RAM, CPU speed, and disk drive space on
+each line.
+
+Output
+The output is the name of the top two preferred computers, one name per line,
+sorted in decreasing order of preference. If there is a tie in the rankings,
+pick the computer(s) whose name(s) are lexicographically smallest
+(i.e., "Apple" is smaller than "Dell"). If there is only one computer,
+output that computer on one line (i.e., do not print it twice). If there
+are no computers, print nothing.
+
+Sample Input
+4
+ABC 13 22 1
+DEF 10 20 30
+GHI 11 2 2
+JKL 20 20 20
+
+Sample Output
+JKL
+DEF
+Explanation
+Computer ABC has a computed value of 93. Computer DEF has a computer value of
+110. Computer GHI has a computed value of 30. Computer JKL has a computed value
+of 120. Therefore, computer JKL is the most preferred, followed by computer
+DEF.

@@ -1,0 +1,48 @@
+2011 Canadian Computing Competition, Stage 1
+
+Problem S2: Multiple Choice
+Your teacher likes to give multiple choice tests. One benefit of giving these tests is that they are
+easy to mark, given an answer key. The other benefit is that students believe they have a one-in-five
+chance of getting the correct answer, assuming the multiple choice possibilities are A, B, C, D or E.
+Write a program that your teacher can use to grade one multiple choice test.
+
+Input Format
+The input will contain the number N (0 < N < 10000) followed by 2N lines. The 2N lines are
+composed of N lines of student responses (with one of A, B, C, D or E on each line), followed by N
+lines of correct answers (with one of A, B, C, D or E on each line), in the same order as the student
+answered the questions (that is, if line i is the student response, then line N + i contains the correct
+answer to that question).
+
+Output Format
+
+Output the number of questions the student
+answered correctly.
+
+Sample Cases
+
+
+
+Input
+3
+A
+B
+C
+A
+C
+B
+
+Output
+1
+
+
+Input
+3
+A
+A
+A
+A
+B
+A
+
+Output
+2

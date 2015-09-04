@@ -1,0 +1,27 @@
+2001 Canadian Computing Competition, Stage 1
+
+Problem J4/S2: Spirals
+A spiral of numbers can start and end with any positive integers less than 100. Write a program which will accept two positive integers x and y as input, and output a list of numbers from x to y inclusive, shown in a spiral. You may assume that the end value is greater than or equal to the start value.
+A spiral starts with the first number in the centre. The next number appears immediately below the first number. The spiral continues with the numbers increasing in a counter-clockwise direction until the last number is printed.
+
+Sample Input 1
+
+1027
+
+Sample Output 1
+
+      27 26
+16 15 14 25
+17 10 13 24
+18 11 12 23
+19 20 21 22
+
+Sample Input 2
+
+712
+
+Sample Output 2
+
+12 11
+ 7 10
+ 8  9
